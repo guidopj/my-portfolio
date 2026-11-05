@@ -50,7 +50,18 @@ export default function Projects() {
       <Grid container spacing={3}>
         {projects.map((project) => (
           <Grid key={project.title} size={{ xs: 12, md: 4 }}>
-            <Box sx={cardSx}>
+            <Box
+              component="a"
+              href={project.link || '#'}
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{
+                ...cardSx,
+                display: 'block',
+                textDecoration: 'none',
+                cursor: 'pointer',
+              }}
+            >
               <Box
                 sx={{
                   width: 48,

@@ -23,12 +23,14 @@ export const projects = [
       'A robust URL shortening backend featuring duplicate link detection, custom aliases, and TTL-based expiration handling.',
     tags: ['NestJS', 'MongoDB', 'Mongoose', 'REST API'],
     icon: StorageIcon,
+    link: "https://github.com/guidopj/url-shortener"
   },
   {
-    title: 'HL7 Integration',
+    title: 'Kafka Demo',
     description:
-      'A learning project exploring HL7 message processing, TCP communication and MLLP-based message exchange.',
-    tags: ['C#', '.NET', 'HL7', 'TCP'],
+      'Event-driven architecture demo using Apache Kafka and .NET. Implements message production and consumption with multiple consumers, consumer groups, partitions and offsets, orchestrated with Docker Compose.',
+    tags: ['.NET 10', 'Apache Kafka', 'Docker', 'C#', 'Microservices'],
     icon: StorageIcon,
-  },
+    link: 'https://github.com/guidopj/kafka-demo',
+},
 ];
